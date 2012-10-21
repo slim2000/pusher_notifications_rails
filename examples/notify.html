@@ -15,12 +15,12 @@
     <![endif]-->
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="../src/lib/gritter/js/jquery.gritter.min.js"></script>
-    <script src="http://js.pusher.com/1.11/pusher.min.js"></script>
+    <script src="http://js.pusher.com/1.12/pusher.min.js"></script>
     <script src="../src/PusherNotifier.js"></script>
     
     <script>
-      var NOTIFY_ENDPOINT = "php/notify.php";
-      //var NOTIFY_ENDPOINT = '/notify'; // ruby-sinatra
+     // var NOTIFY_ENDPOINT = "php/notify.php";
+      var NOTIFY_ENDPOINT = '/notify'; // ruby-sinatra
     
       $(function() {
         $("a[href='#notify']").click(function() {
@@ -32,7 +32,7 @@
           
         $(".notify button").click(handleNotifyButtonClick);
         
-        var pusher = new Pusher('49e26cb8e9dde3dfc009');
+        var pusher = new Pusher('c098fd0ea035d82a56b5');
         var channel = pusher.subscribe('my_notifications');
         var notifier = new PusherNotifier(channel);
       });
