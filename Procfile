@@ -1,1 +1,1 @@
-web: bundle exec ruby -rubygems notify.rb -b 0.0.0.0:$PORT
+web: bundle exec ruby -rubygems notify.rb 0.0.0.0:$PORT
