@@ -71,3 +71,8 @@ http://html5-realtime-push-notifications.phpfogapp.com/
 3. In `examples/ruby-sinatra` run `bundle install` to install the dependencies defined in `examples/ruby-sinatra/Gemfile`
 4. Start the Sinatra server by running `bundle exec ruby -rubygems notify.rb`
 5. Navigate to http://localhost:4567 (default for sinatra) to see a side-by-side page example and click the 'Notify' button to trigger a notification.
+=======
+pusher_rails
+============
+
+Pusher Ruby Rails Notification Example
